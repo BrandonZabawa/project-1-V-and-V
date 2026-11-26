@@ -1,0 +1,13 @@
+# Keep Unix line endings on files that bash, make and Python read on eustis,
+# even when the repo is cloned or edited on Windows. A Windows line ending in a
+# shell script breaks it with "$'\r': command not found".
+*.sh      text eol=lf
+Makefile  text eol=lf
+*.py      text eol=lf
+*.yaml    text eol=lf
+*.md      text eol=lf
+*.tex     text eol=lf
+
+# Binary evidence files: never touch their bytes.
+*.png     binary
+*.pdf     binary

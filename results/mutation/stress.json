@@ -1,0 +1,153 @@
+{
+  "found": 21,
+  "total": 24,
+  "percent": 87.5,
+  "threshold": 90.0,
+  "pass": false,
+  "mutants": [
+    {
+      "id": "simul_count_inc",
+      "found": true,
+      "why": "test-failed",
+      "desc": "a true simultaneous read+write increments the count"
+    },
+    {
+      "id": "simul_write_lost",
+      "found": true,
+      "why": "test-failed",
+      "desc": "the write half of a simultaneous read+write is dropped (count still right)"
+    },
+    {
+      "id": "simul_read_stalls",
+      "found": true,
+      "why": "test-failed",
+      "desc": "the read pointer does not advance on a simultaneous read+write"
+    },
+    {
+      "id": "write_when_full_if_reading",
+      "found": true,
+      "why": "test-failed",
+      "desc": "a write at full is accepted when a read happens on the same edge"
+    },
+    {
+      "id": "read_when_empty_if_writing",
+      "found": true,
+      "why": "test-failed",
+      "desc": "a read at empty is accepted when a write happens on the same edge"
+    },
+    {
+      "id": "write_beats_reset",
+      "found": true,
+      "why": "test-failed",
+      "desc": "reset is skipped on any cycle where wr_en is high"
+    },
+    {
+      "id": "reset_keeps_count",
+      "found": true,
+      "why": "test-failed",
+      "desc": "reset does not clear the count"
+    },
+    {
+      "id": "reset_keeps_rdptr",
+      "found": true,
+      "why": "test-failed",
+      "desc": "reset does not clear the read pointer"
+    },
+    {
+      "id": "reset_keeps_wrptr",
+      "found": true,
+      "why": "test-failed",
+      "desc": "reset does not clear the write pointer"
+    },
+    {
+      "id": "rdptr_wrap_early",
+      "found": true,
+      "why": "test-failed",
+      "desc": "read pointer wraps one slot early"
+    },
+    {
+      "id": "wrptr_wrap_to_one",
+      "found": true,
+      "why": "test-failed",
+      "desc": "write pointer wraps to slot 1 instead of slot 0"
+    },
+    {
+      "id": "count_rd_inc",
+      "found": true,
+      "why": "test-failed",
+      "desc": "a read-only cycle increments the count"
+    },
+    {
+      "id": "count_saturates_below_full",
+      "found": true,
+      "why": "test-failed",
+      "desc": "the count stops at DEPTH-1, so full never asserts"
+    },
+    {
+      "id": "full_stuck_low",
+      "found": true,
+      "why": "test-failed",
+      "desc": "full compares against DEPTH+1 and never asserts"
+    },
+    {
+      "id": "empty_from_pointers",
+      "found": true,
+      "why": "test-failed",
+      "desc": "empty is derived from pointer equality, so it also asserts at full"
+    },
+    {
+      "id": "write_while_full_corrupts_head",
+      "found": true,
+      "why": "test-failed",
+      "desc": "a dropped write still writes memory and moves wr_ptr (overwrites the head)"
+    },
+    {
+      "id": "read_while_empty_moves_rdptr",
+      "found": true,
+      "why": "test-failed",
+      "desc": "an ignored read still advances the read pointer"
+    },
+    {
+      "id": "mem_msb_dropped",
+      "found": true,
+      "why": "test-failed",
+      "desc": "the MSB of every stored word is forced to 0"
+    },
+    {
+      "id": "mem_bit_coupling",
+      "found": true,
+      "why": "test-failed",
+      "desc": "bit 0 of a stored word is XORed with bit 7 (coupling fault)"
+    },
+    {
+      "id": "slot5_bit3_stuck1",
+      "found": true,
+      "why": "test-failed",
+      "desc": "slot 5, bit 3 reads back stuck at 1"
+    },
+    {
+      "id": "head_shows_input_on_simul_at_one",
+      "found": true,
+      "why": "test-failed",
+      "desc": "with count==1 and both enables high, rd_data shows wr_data instead of the head"
+    },
+    {
+      "id": "empty_bypass_leaks_input",
+      "found": false,
+      "why": "passed",
+      "desc": "while empty, rd_data shows wr_data (a live bypass of the input bus)"
+    },
+    {
+      "id": "empty_reads_zero",
+      "found": false,
+      "why": "passed",
+      "desc": "while empty, rd_data is forced to zero instead of the stale slot"
+    },
+    {
+      "id": "full_from_pointers",
+      "found": false,
+      "why": "passed",
+      "desc": "full derived from pointer equality plus a nonzero count (logically identical)"
+    }
+  ]
+}

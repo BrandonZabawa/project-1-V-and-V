@@ -1,0 +1,130 @@
+{
+ "full_offbyone": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "empty_offbyone": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "ignore_full": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "ignore_empty": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "count_wr_dec": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "rd_data_wrptr": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "mem_corrupt": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "wrptr_wrap_early": {
+  "pool": "released",
+  "found_by_directed_tests": true
+ },
+ "simul_count_inc": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "simul_write_lost": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "simul_read_stalls": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "write_when_full_if_reading": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "read_when_empty_if_writing": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "write_beats_reset": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "reset_keeps_count": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "reset_keeps_rdptr": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "reset_keeps_wrptr": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "rdptr_wrap_early": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "wrptr_wrap_to_one": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "count_rd_inc": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "count_saturates_below_full": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "full_stuck_low": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "empty_from_pointers": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "write_while_full_corrupts_head": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "read_while_empty_moves_rdptr": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "mem_msb_dropped": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "mem_bit_coupling": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "slot5_bit3_stuck1": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "head_shows_input_on_simul_at_one": {
+  "pool": "own",
+  "found_by_directed_tests": true
+ },
+ "empty_bypass_leaks_input": {
+  "pool": "own",
+  "found_by_directed_tests": false
+ },
+ "empty_reads_zero": {
+  "pool": "own",
+  "found_by_directed_tests": false
+ },
+ "full_from_pointers": {
+  "pool": "own",
+  "found_by_directed_tests": false
+ }
+}

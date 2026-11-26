@@ -1,0 +1,24 @@
+{
+ "check_a_prefix_claim": {
+  "seed": 1,
+  "budgets": {
+   "100": {
+    "mutants_compared": 32,
+    "agree": 32,
+    "disagreements": []
+   },
+   "800": {
+    "mutants_compared": 32,
+    "agree": 32,
+    "disagreements": []
+   }
+  }
+ },
+ "check_b_whole_suite": {
+  "seed": 1,
+  "mutants_compared": 32,
+  "agree": 32,
+  "disagreements": [],
+  "harness_found": 29
+ }
+}

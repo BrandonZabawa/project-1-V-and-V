@@ -1,0 +1,39 @@
+# Regression `signoff` -- 2500 cycles per run, Icarus
+
+Command: `python3 crv/regress.py --jobs 1`
+
+| profile | seed | pass | coverage % | empty mass | full mass | stimulus digest |
+|---|---:|---|---:|---:|---:|---|
+| v4 | 1 | yes | 100.0 | 0.103 | 0.199 | `9f792b79f86b6cf1` |
+| v4 | 2 | yes | 100.0 | 0.126 | 0.196 | `4e653f12dcf88e8c` |
+| v4 | 3 | yes | 100.0 | 0.129 | 0.181 | `7bae7d49b2f6bf66` |
+| v4 | 4 | yes | 99.53 | 0.099 | 0.186 | `c2711bc0b601aea6` |
+| v4 | 5 | yes | 100.0 | 0.105 | 0.163 | `837b7ae9ab53ea1b` |
+| v4 | 6 | yes | 100.0 | 0.113 | 0.187 | `d7cfa8e37a87eb18` |
+| v4 | 7 | yes | 100.0 | 0.093 | 0.193 | `c40273008eb7c833` |
+| v4 | 8 | yes | 100.0 | 0.113 | 0.187 | `85eb0b3e5021a19d` |
+| v4 | 9 | yes | 100.0 | 0.113 | 0.155 | `37508a06a8e0945f` |
+| v4 | 10 | yes | 100.0 | 0.131 | 0.18 | `993af9fcd3b6f899` |
+
+## Merged coverage per profile (union over seeds)
+
+### v4: 213/213 bins = 100.00%
+
+| item | covered | holes |
+|---|---:|---|
+| `fifo.occ` | 9/9 |  |
+| `fifo.op` | 4/4 |  |
+| `fifo.pre_occ` | 5/5 |  |
+| `fifo.outcome` | 8/8 |  |
+| `fifo.data` | 5/5 |  |
+| `fifo.wrap` | 2/2 |  |
+| `fifo.wrap_occ_cls` | 5/5 |  |
+| `fifo.rst_occ` | 3/3 |  |
+| `fifo.rst_en` | 4/4 |  |
+| `fifo.march` | 128/128 |  |
+| `fifo.occ_x_op` | 20/20 |  |
+| `fifo.wrap_x_occ` | 8/8 |  |
+| `fifo.rst_x_en` | 12/12 |  |
+
+Seeds closing 100% on their own: **9/10**
+

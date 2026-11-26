@@ -1,0 +1,1487 @@
+{
+ "question": "Q1: Does closing coverage track finding bugs?",
+ "owner": "Brandon Zabawa",
+ "profiles": [
+  "v1",
+  "v4"
+ ],
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "budgets": [
+  50,
+  100,
+  200,
+  400,
+  800,
+  1600,
+  3200
+ ],
+ "point_count": 70,
+ "pearson_cross_vs_all_found": 0.809,
+ "spearman_cross_vs_all_found": 0.883,
+ "spearman_cross_vs_released_found": 0.663,
+ "table": {
+  "v1": [
+   {
+    "budget": 50,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 40.5,
+     "min": 25.0,
+     "max": 55.0
+    },
+    "total_coverage": {
+     "mean": 71.362,
+     "min": 66.667,
+     "max": 75.117
+    },
+    "released_found": {
+     "mean": 6.4,
+     "min": 6,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 15.8,
+     "min": 14,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 22.2,
+     "min": 20,
+     "max": 28
+    }
+   },
+   {
+    "budget": 100,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 51.0,
+     "min": 40.0,
+     "max": 65.0
+    },
+    "total_coverage": {
+     "mean": 82.817,
+     "min": 79.343,
+     "max": 87.793
+    },
+    "released_found": {
+     "mean": 6.8,
+     "min": 6,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 17.0,
+     "min": 15,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 23.8,
+     "min": 21,
+     "max": 28
+    }
+   },
+   {
+    "budget": 200,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 62.0,
+     "min": 45.0,
+     "max": 70.0
+    },
+    "total_coverage": {
+     "mean": 87.981,
+     "min": 83.099,
+     "max": 90.141
+    },
+    "released_found": {
+     "mean": 7.8,
+     "min": 7,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 19.0,
+     "min": 15,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 26.8,
+     "min": 22,
+     "max": 28
+    }
+   },
+   {
+    "budget": 400,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 69.5,
+     "min": 65.0,
+     "max": 72.5
+    },
+    "total_coverage": {
+     "mean": 90.516,
+     "min": 88.732,
+     "max": 91.549
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 20.0,
+     "min": 20,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 28.0,
+     "min": 28,
+     "max": 28
+    }
+   },
+   {
+    "budget": 800,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 72.5,
+     "min": 72.5,
+     "max": 72.5
+    },
+    "total_coverage": {
+     "mean": 92.019,
+     "min": 91.549,
+     "max": 92.488
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 20.0,
+     "min": 20,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 28.0,
+     "min": 28,
+     "max": 28
+    }
+   },
+   {
+    "budget": 1600,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 72.5,
+     "min": 72.5,
+     "max": 72.5
+    },
+    "total_coverage": {
+     "mean": 92.488,
+     "min": 92.488,
+     "max": 92.488
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 20.0,
+     "min": 20,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 28.0,
+     "min": 28,
+     "max": 28
+    }
+   },
+   {
+    "budget": 3200,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 72.5,
+     "min": 72.5,
+     "max": 72.5
+    },
+    "total_coverage": {
+     "mean": 92.488,
+     "min": 92.488,
+     "max": 92.488
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 20.0,
+     "min": 20,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 28.0,
+     "min": 28,
+     "max": 28
+    }
+   }
+  ],
+  "v4": [
+   {
+    "budget": 50,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 44.0,
+     "min": 42.5,
+     "max": 45.0
+    },
+    "total_coverage": {
+     "mean": 76.807,
+     "min": 70.892,
+     "max": 81.69
+    },
+    "released_found": {
+     "mean": 7.4,
+     "min": 7,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 17.8,
+     "min": 16,
+     "max": 19
+    },
+    "all_found": {
+     "mean": 25.2,
+     "min": 23,
+     "max": 27
+    }
+   },
+   {
+    "budget": 100,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 56.5,
+     "min": 50.0,
+     "max": 62.5
+    },
+    "total_coverage": {
+     "mean": 87.042,
+     "min": 86.385,
+     "max": 88.263
+    },
+    "released_found": {
+     "mean": 7.6,
+     "min": 7,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 19.2,
+     "min": 17,
+     "max": 20
+    },
+    "all_found": {
+     "mean": 26.8,
+     "min": 24,
+     "max": 28
+    }
+   },
+   {
+    "budget": 200,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 70.5,
+     "min": 67.5,
+     "max": 75.0
+    },
+    "total_coverage": {
+     "mean": 92.864,
+     "min": 91.549,
+     "max": 94.366
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 20.8,
+     "min": 20,
+     "max": 21
+    },
+    "all_found": {
+     "mean": 28.8,
+     "min": 28,
+     "max": 29
+    }
+   },
+   {
+    "budget": 400,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 80.5,
+     "min": 72.5,
+     "max": 87.5
+    },
+    "total_coverage": {
+     "mean": 95.587,
+     "min": 93.427,
+     "max": 97.183
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 21.0,
+     "min": 21,
+     "max": 21
+    },
+    "all_found": {
+     "mean": 29.0,
+     "min": 29,
+     "max": 29
+    }
+   },
+   {
+    "budget": 800,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 89.0,
+     "min": 85.0,
+     "max": 97.5
+    },
+    "total_coverage": {
+     "mean": 97.747,
+     "min": 96.714,
+     "max": 99.531
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 21.0,
+     "min": 21,
+     "max": 21
+    },
+    "all_found": {
+     "mean": 29.0,
+     "min": 29,
+     "max": 29
+    }
+   },
+   {
+    "budget": 1600,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 98.0,
+     "min": 92.5,
+     "max": 100.0
+    },
+    "total_coverage": {
+     "mean": 99.625,
+     "min": 98.592,
+     "max": 100.0
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 21.0,
+     "min": 21,
+     "max": 21
+    },
+    "all_found": {
+     "mean": 29.0,
+     "min": 29,
+     "max": 29
+    }
+   },
+   {
+    "budget": 3200,
+    "released_total": 8,
+    "all_total": 32,
+    "cross": {
+     "mean": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "total_coverage": {
+     "mean": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "released_found": {
+     "mean": 8.0,
+     "min": 8,
+     "max": 8
+    },
+    "own_found": {
+     "mean": 21.0,
+     "min": 21,
+     "max": 21
+    },
+    "all_found": {
+     "mean": 29.0,
+     "min": 29,
+     "max": 29
+    }
+   }
+  ]
+ },
+ "timing": {
+  "v1": [
+   {
+    "seed": 1,
+    "last_new_find_cycle": 192,
+    "cross_first_100_at_budget": null,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 28
+   },
+   {
+    "seed": 2,
+    "last_new_find_cycle": 120,
+    "cross_first_100_at_budget": null,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 28
+   },
+   {
+    "seed": 3,
+    "last_new_find_cycle": 94,
+    "cross_first_100_at_budget": null,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 28
+   },
+   {
+    "seed": 4,
+    "last_new_find_cycle": 40,
+    "cross_first_100_at_budget": null,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 28
+   },
+   {
+    "seed": 5,
+    "last_new_find_cycle": 268,
+    "cross_first_100_at_budget": null,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 28
+   }
+  ],
+  "v4": [
+   {
+    "seed": 1,
+    "last_new_find_cycle": 110,
+    "cross_first_100_at_budget": 1600,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 29
+   },
+   {
+    "seed": 2,
+    "last_new_find_cycle": 151,
+    "cross_first_100_at_budget": 2500,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 29
+   },
+   {
+    "seed": 3,
+    "last_new_find_cycle": 304,
+    "cross_first_100_at_budget": 1600,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 29
+   },
+   {
+    "seed": 4,
+    "last_new_find_cycle": 145,
+    "cross_first_100_at_budget": 3200,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 29
+   },
+   {
+    "seed": 5,
+    "last_new_find_cycle": 102,
+    "cross_first_100_at_budget": 1600,
+    "finds_after_cross_closed": 0,
+    "caught_at_longest_budget": 29
+   }
+  ]
+ },
+ "never_found": {
+  "v1": {
+   "mutants": [
+    "write_beats_reset",
+    "empty_bypass_leaks_input",
+    "empty_reads_zero",
+    "full_from_pointers"
+   ],
+   "open_crosses_seed1_at_longest_budget": {
+    "fifo.rst_x_en": 8.333
+   }
+  },
+  "v4": {
+   "mutants": [
+    "empty_bypass_leaks_input",
+    "empty_reads_zero",
+    "full_from_pointers"
+   ],
+   "open_crosses_seed1_at_longest_budget": {}
+  }
+ },
+ "median_detection_cycle": {
+  "v1": {
+   "all_found": 8.0,
+   "by_class": {
+    "boundary": 84.0,
+    "data": 4.0,
+    "overlap": 8.0,
+    "pointer": 19.0,
+    "released": 1.5,
+    "reset": 1.0
+   }
+  },
+  "v4": {
+   "all_found": 13.0,
+   "by_class": {
+    "boundary": 17.5,
+    "data": 1.0,
+    "overlap": 12.0,
+    "pointer": 15.5,
+    "released": 1.0,
+    "reset": 1.0
+   }
+  }
+ },
+ "points": [
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 50,
+   "cross": 42.5,
+   "total_coverage": 75.117,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 100,
+   "cross": 42.5,
+   "total_coverage": 81.221,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 200,
+   "cross": 67.5,
+   "total_coverage": 90.141,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 400,
+   "cross": 72.5,
+   "total_coverage": 91.549,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 800,
+   "cross": 72.5,
+   "total_coverage": 92.019,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 1600,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 1,
+   "budget": 3200,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 50,
+   "cross": 25.0,
+   "total_coverage": 69.484,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 14,
+   "own_total": 24,
+   "all_found": 20,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 100,
+   "cross": 40.0,
+   "total_coverage": 80.282,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 200,
+   "cross": 62.5,
+   "total_coverage": 87.793,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 400,
+   "cross": 65.0,
+   "total_coverage": 88.732,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 800,
+   "cross": 72.5,
+   "total_coverage": 91.549,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 1600,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 2,
+   "budget": 3200,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 50,
+   "cross": 40.0,
+   "total_coverage": 66.667,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 100,
+   "cross": 65.0,
+   "total_coverage": 85.446,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 200,
+   "cross": 70.0,
+   "total_coverage": 89.671,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 400,
+   "cross": 72.5,
+   "total_coverage": 91.08,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 800,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 1600,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 3,
+   "budget": 3200,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 50,
+   "cross": 55.0,
+   "total_coverage": 74.648,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 100,
+   "cross": 65.0,
+   "total_coverage": 87.793,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 200,
+   "cross": 65.0,
+   "total_coverage": 89.202,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 400,
+   "cross": 70.0,
+   "total_coverage": 91.08,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 800,
+   "cross": 72.5,
+   "total_coverage": 92.019,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 1600,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 4,
+   "budget": 3200,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 50,
+   "cross": 40.0,
+   "total_coverage": 70.892,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 100,
+   "cross": 42.5,
+   "total_coverage": 79.343,
+   "released_found": 6,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 21,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 200,
+   "cross": 45.0,
+   "total_coverage": 83.099,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 15,
+   "own_total": 24,
+   "all_found": 22,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 400,
+   "cross": 67.5,
+   "total_coverage": 90.141,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 800,
+   "cross": 72.5,
+   "total_coverage": 92.019,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 1600,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v1",
+   "seed": 5,
+   "budget": 3200,
+   "cross": 72.5,
+   "total_coverage": 92.488,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 50,
+   "cross": 42.5,
+   "total_coverage": 79.812,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 18,
+   "own_total": 24,
+   "all_found": 26,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 100,
+   "cross": 55.0,
+   "total_coverage": 86.385,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 200,
+   "cross": 70.0,
+   "total_coverage": 92.958,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 400,
+   "cross": 87.5,
+   "total_coverage": 97.183,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 800,
+   "cross": 97.5,
+   "total_coverage": 99.531,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 1600,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 1,
+   "budget": 3200,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 50,
+   "cross": 45.0,
+   "total_coverage": 70.892,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 19,
+   "own_total": 24,
+   "all_found": 27,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 100,
+   "cross": 62.5,
+   "total_coverage": 86.385,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 200,
+   "cross": 75.0,
+   "total_coverage": 94.366,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 400,
+   "cross": 77.5,
+   "total_coverage": 94.836,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 800,
+   "cross": 85.0,
+   "total_coverage": 96.714,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 1600,
+   "cross": 97.5,
+   "total_coverage": 99.531,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 2,
+   "budget": 3200,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 50,
+   "cross": 42.5,
+   "total_coverage": 70.892,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 16,
+   "own_total": 24,
+   "all_found": 23,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 100,
+   "cross": 50.0,
+   "total_coverage": 86.385,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 17,
+   "own_total": 24,
+   "all_found": 24,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 200,
+   "cross": 67.5,
+   "total_coverage": 91.549,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 400,
+   "cross": 72.5,
+   "total_coverage": 93.427,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 800,
+   "cross": 85.0,
+   "total_coverage": 97.183,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 1600,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 3,
+   "budget": 3200,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 50,
+   "cross": 45.0,
+   "total_coverage": 80.751,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 18,
+   "own_total": 24,
+   "all_found": 25,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 100,
+   "cross": 57.5,
+   "total_coverage": 87.793,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 20,
+   "own_total": 24,
+   "all_found": 28,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 200,
+   "cross": 67.5,
+   "total_coverage": 92.019,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 400,
+   "cross": 82.5,
+   "total_coverage": 96.244,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 800,
+   "cross": 87.5,
+   "total_coverage": 97.183,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 1600,
+   "cross": 92.5,
+   "total_coverage": 98.592,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 4,
+   "budget": 3200,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 50,
+   "cross": 45.0,
+   "total_coverage": 81.69,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 18,
+   "own_total": 24,
+   "all_found": 25,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 100,
+   "cross": 57.5,
+   "total_coverage": 88.263,
+   "released_found": 7,
+   "released_total": 8,
+   "own_found": 19,
+   "own_total": 24,
+   "all_found": 26,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 200,
+   "cross": 72.5,
+   "total_coverage": 93.427,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 400,
+   "cross": 82.5,
+   "total_coverage": 96.244,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 800,
+   "cross": 90.0,
+   "total_coverage": 98.122,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 1600,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  },
+  {
+   "profile": "v4",
+   "seed": 5,
+   "budget": 3200,
+   "cross": 100.0,
+   "total_coverage": 100.0,
+   "released_found": 8,
+   "released_total": 8,
+   "own_found": 21,
+   "own_total": 24,
+   "all_found": 29,
+   "all_total": 32
+  }
+ ]
+}
