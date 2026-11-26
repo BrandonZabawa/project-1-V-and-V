@@ -1,0 +1,97 @@
+# .gitignore for the Project 1 FIFO repo (code/tb/fifo_p1)
+#
+# Why this file exists: an upload of the whole folder sent every file inside
+# .git/ (about 200 git objects) plus about 120 regenerable logs, and the upload
+# server answered each one with "502 Bad Gateway". Git never tracks its own
+# .git/ folder, so for an upload, use the submission zip (it has no .git/).
+# This file keeps everything that a `make` or a script can recreate out of
+# the repo, so the repo and the zip stay small.
+#
+# Rule of thumb: commit what a person wrote (code, plans, findings, report),
+# and commit the small summaries a reader checks. Do not commit what a command
+# recreates in seconds or minutes from a seed and a command line.
+
+# ---------------------------------------------------------------------------
+# 1. Simulator build output (every `make SIM=icarus` recreates it)
+# ---------------------------------------------------------------------------
+sim_build/
+sim_build_*/
+results.xml
+results_*.xml
+obj_dir/
+*.vvp
+*.vcd
+*.fst
+*.ghw
+dump.*
+
+# ---------------------------------------------------------------------------
+# 2. Python caches and local virtual environments
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# 3. LaTeX build by-products (docs/REPORT.tex builds REPORT.pdf at the root)
+# ---------------------------------------------------------------------------
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
+docs/*.fls
+docs/*.fdb_latexmk
+docs/*.synctex.gz
+docs/REPORT.pdf
+
+# ---------------------------------------------------------------------------
+# 4. Raw per-seed run output. Each file regenerates from its seed and the
+#    command in README.md, so only the summaries are committed.
+# ---------------------------------------------------------------------------
+results/**/seed_*.log
+results/**/seed_*.yml
+results/**/*.xml
+results/**/build/
+results/**/sim_build_*/
+# (results/closure_curve/ and results/seed4_budget/ stay tracked: closure.md
+#  quotes them as evidence, and they are only a few small files)
+
+# Graduate study scratch space (one JSON per mutant run; the scripts merge
+# them into one file per seed under extension/data/, which IS committed)
+extension/scratch/
+extension/data/**/clean.json
+extension/data/**/clean.log
+extension/data/**/released__*.json
+extension/data/**/own__*.json
+
+# ---------------------------------------------------------------------------
+# 5. Demo recording: scripts/demo.sh logs, and the video itself. The video
+#    goes to YouTube, Panopto or OneDrive and DEMO.md holds the link; a
+#    video file in the repo would bloat every upload and clone.
+# ---------------------------------------------------------------------------
+demo_logs/
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.cast
+
+# ---------------------------------------------------------------------------
+# 6. Submission archives and editor or operating system clutter
+# ---------------------------------------------------------------------------
+*.zip
+*.tar.gz
+.direnv/
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+# Windows adds these next to files downloaded into WSL
+*:Zone.Identifier
+*Zone.Identifier

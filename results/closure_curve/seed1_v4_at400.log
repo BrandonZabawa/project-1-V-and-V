@@ -1,0 +1,62 @@
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.13/site-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1792873221
+     0.00ns INFO     cocotb.regression                  Found test test_fifo_p1.test_t3_crv_signoff
+     0.00ns INFO     cocotb.regression                  running test_t3_crv_signoff (1/1)
+/usr/local/lib/python3.13/site-packages/vsc/model/field_scalar_model.py:93: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  self.val.v = int(val)
+/usr/local/lib/python3.13/site-packages/vsc/model/value_scalar.py:68: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  v = int(rhs)
+/usr/local/lib/python3.13/site-packages/vsc/model/value_scalar.py:48: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  v = int(rhs)
+/usr/local/lib/python3.13/site-packages/vsc/visitors/dist_constraint_builder.py:102: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  weight = int(w.weight.val())
+/usr/local/lib/python3.13/site-packages/vsc/model/variable_bound_in_propagator.py:32: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  else [int(e.val()),int(e.val())], self.in_e.rl))
+/usr/local/lib/python3.13/site-packages/vsc/model/variable_bound_in_propagator.py:31: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  in_r_l_t = list(map(lambda e:[int(e.lhs.val()),int(e.rhs.val())] if isinstance(e, ExprRangeModel)
+/usr/local/lib/python3.13/site-packages/vsc/model/expr_literal_model.py:42: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  return btor.Const(int(self.val()), ctx_width)
+/usr/local/lib/python3.13/site-packages/vsc/model/rand_state.py:33: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  low = int(low)
+/usr/local/lib/python3.13/site-packages/vsc/model/rand_state.py:34: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  high = int(high)
+/usr/local/lib/python3.13/site-packages/vsc/model/value_scalar.py:80: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  v = int(rhs)
+/usr/local/lib/python3.13/site-packages/vsc/model/expr_partselect_model.py:40: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  return btor.Slice(
+/usr/local/lib/python3.13/site-packages/vsc/model/solvegroup_swizzler_partsel.py:177: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  ExprLiteralModel(int(val), f.is_signed, f.width))
+/usr/local/lib/python3.13/site-packages/vsc/model/value_scalar.py:60: DeprecationWarning: __int__ returned non-int (type ValueInt).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python.
+  v = int(rhs)
+  4031.00ns INFO     cocotb.fifo                        SEED 1 PROFILE v4 CYCLES 400 checked=403 pre_edge=402 digest=b7072b3a09ae8514
+  4031.00ns INFO     cocotb.fifo                        OCC  0:24 1:23 2:35 3:57 4:47 5:31 6:53 7:59 8:74   empty 0.060 full 0.184
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.occ                            9/9    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.op                             4/4    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.pre_occ                        5/5    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.outcome                        8/8    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.data                           5/5    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.wrap                           2/2    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.wrap_occ_cls                   4/5     80.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.rst_occ                        3/3    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.rst_en                         4/4    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.march                        128/128  100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.occ_x_op                      19/20    95.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.wrap_x_occ                     6/8     75.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.rst_x_en                      10/12    83.33%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.illegal.I1_count_delta         1/1    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.illegal.I2_full_and_empty      1/1    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.illegal.I3_double_wrap         1/1    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER fifo.illegal.I4_range               1/1    100.00%
+  4031.00ns INFO     cocotb.fifo                        COVER TOTAL 97.18%  holes={'fifo.wrap_occ_cls': ['empty'], 'fifo.occ_x_op': [('empty', 'idle')], 'fifo.wrap_x_occ': [('wr_wrap', 'one'), ('rd_wrap', 'empty')], 'fifo.rst_x_en': [('partial', 'none'), ('partial', 'wr')]}
+  4031.00ns INFO     cocotb.regression                  test_t3_crv_signoff passed
+  4031.00ns INFO     cocotb.regression                  ******************************************************************************************
+                                                        ** TEST                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ******************************************************************************************
+                                                        ** test_fifo_p1.test_t3_crv_signoff   PASS        4031.00           3.19       1264.48  **
+                                                        ******************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   4031.00           3.42       1178.79  **
+                                                        ******************************************************************************************
+                                                        

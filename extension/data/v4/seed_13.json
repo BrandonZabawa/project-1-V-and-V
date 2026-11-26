@@ -1,0 +1,389 @@
+{
+ "profile": "v4",
+ "seed": 13,
+ "coverage_checkpoints": [
+  50,
+  100,
+  200,
+  400,
+  800,
+  1600,
+  2500,
+  3200
+ ],
+ "clean_run": {
+  "coverage_curve": [
+   {
+    "cycles": 50,
+    "coverage": 72.77,
+    "cross": 47.5,
+    "each_cross": {
+     "fifo.occ_x_op": 75.0,
+     "fifo.wrap_x_occ": 37.5,
+     "fifo.rst_x_en": 8.333
+    }
+   },
+   {
+    "cycles": 100,
+    "coverage": 88.732,
+    "cross": 60.0,
+    "each_cross": {
+     "fifo.occ_x_op": 85.0,
+     "fifo.wrap_x_occ": 50.0,
+     "fifo.rst_x_en": 25.0
+    }
+   },
+   {
+    "cycles": 200,
+    "coverage": 93.897,
+    "cross": 72.5,
+    "each_cross": {
+     "fifo.occ_x_op": 95.0,
+     "fifo.wrap_x_occ": 62.5,
+     "fifo.rst_x_en": 41.667
+    }
+   },
+   {
+    "cycles": 400,
+    "coverage": 96.244,
+    "cross": 82.5,
+    "each_cross": {
+     "fifo.occ_x_op": 100.0,
+     "fifo.wrap_x_occ": 75.0,
+     "fifo.rst_x_en": 58.333
+    }
+   },
+   {
+    "cycles": 800,
+    "coverage": 98.122,
+    "cross": 90.0,
+    "each_cross": {
+     "fifo.occ_x_op": 100.0,
+     "fifo.wrap_x_occ": 87.5,
+     "fifo.rst_x_en": 75.0
+    }
+   },
+   {
+    "cycles": 1600,
+    "coverage": 99.531,
+    "cross": 97.5,
+    "each_cross": {
+     "fifo.occ_x_op": 100.0,
+     "fifo.wrap_x_occ": 100.0,
+     "fifo.rst_x_en": 91.667
+    }
+   },
+   {
+    "cycles": 2500,
+    "coverage": 100.0,
+    "cross": 100.0,
+    "each_cross": {
+     "fifo.occ_x_op": 100.0,
+     "fifo.wrap_x_occ": 100.0,
+     "fifo.rst_x_en": 100.0
+    }
+   },
+   {
+    "cycles": 3200,
+    "coverage": 100.0,
+    "cross": 100.0,
+    "each_cross": {
+     "fifo.occ_x_op": 100.0,
+     "fifo.wrap_x_occ": 100.0,
+     "fifo.rst_x_en": 100.0
+    }
+   }
+  ],
+  "wall_seconds": 27.27
+ },
+ "mutants": [
+  {
+   "pool": "released",
+   "id": "full_offbyone",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 17,
+   "message": "AssertionError: seed 13 cycle 20 (rst_n=1 wr_en=1 rd_en=0 wr_data=0x2d): full 1 != model 0",
+   "wall_seconds": 2.61
+  },
+  {
+   "pool": "released",
+   "id": "empty_offbyone",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 0,
+   "message": "AssertionError: seed 13 cycle 1 (rst_n=0 wr_en=0 rd_en=0 wr_data=0x0): empty 0 != model 1",
+   "wall_seconds": 2.48
+  },
+  {
+   "pool": "released",
+   "id": "ignore_full",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 21,
+   "message": "AssertionError: seed 13 cycle 24 (rst_n=1 wr_en=1 rd_en=0 wr_data=0x75): count 9 != model 8",
+   "wall_seconds": 2.44
+  },
+  {
+   "pool": "released",
+   "id": "ignore_empty",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 89,
+   "message": "AssertionError: seed 13 cycle 92 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xff): count 0 != model 1",
+   "wall_seconds": 2.96
+  },
+  {
+   "pool": "released",
+   "id": "count_wr_dec",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): count 15 != model 1",
+   "wall_seconds": 2.2
+  },
+  {
+   "pool": "released",
+   "id": "rd_data_wrptr",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data is X/Z, model head 0xae",
+   "wall_seconds": 2.33
+  },
+  {
+   "pool": "released",
+   "id": "mem_corrupt",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data 0xaf != model head 0xae (model queue ['0xae'])",
+   "wall_seconds": 2.38
+  },
+  {
+   "pool": "released",
+   "id": "wrptr_wrap_early",
+   "class": "released",
+   "verdict": "found",
+   "first_failure_cycle": 15,
+   "message": "AssertionError: seed 13 cycle 18 (rst_n=1 wr_en=1 rd_en=1 wr_data=0x8d): rd_data is X/Z, model head 0x0",
+   "wall_seconds": 2.42
+  },
+  {
+   "pool": "own",
+   "id": "simul_count_inc",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 3,
+   "message": "AssertionError: seed 13 cycle 6 (rst_n=1 wr_en=1 rd_en=1 wr_data=0x0): count 3 != model 2",
+   "wall_seconds": 2.38
+  },
+  {
+   "pool": "own",
+   "id": "simul_write_lost",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 4,
+   "message": "AssertionError: seed 13 cycle 7 (rst_n=1 wr_en=0 rd_en=1 wr_data=0xd5): rd_data is X/Z, model head 0x0",
+   "wall_seconds": 2.1
+  },
+  {
+   "pool": "own",
+   "id": "simul_read_stalls",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 3,
+   "message": "AssertionError: seed 13 cycle 6 (rst_n=1 wr_en=1 rd_en=1 wr_data=0x0): rd_data 0xae != model head 0xe1 (model queue ['0xe1', '0x0'])",
+   "wall_seconds": 2.16
+  },
+  {
+   "pool": "own",
+   "id": "write_when_full_if_reading",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 23,
+   "message": "AssertionError: seed 13 cycle 26 (rst_n=1 wr_en=1 rd_en=1 wr_data=0x93): count 8 != model 7",
+   "wall_seconds": 2.36
+  },
+  {
+   "pool": "own",
+   "id": "read_when_empty_if_writing",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 89,
+   "message": "AssertionError: seed 13 cycle 92 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xff): count 0 != model 1",
+   "wall_seconds": 3.02
+  },
+  {
+   "pool": "own",
+   "id": "write_beats_reset",
+   "class": "reset",
+   "verdict": "found",
+   "first_failure_cycle": 88,
+   "message": "AssertionError: seed 13 cycle 91 (rst_n=0 wr_en=1 rd_en=1 wr_data=0x85): count 1 != model 0",
+   "wall_seconds": 3.17
+  },
+  {
+   "pool": "own",
+   "id": "reset_keeps_count",
+   "class": "reset",
+   "verdict": "found",
+   "first_failure_cycle": 0,
+   "message": "ValueError: Unresolvable bit in binary string: 'x'. Set the COCOTB_RESOLVE_X environment variable to configure how special values are resolved.",
+   "wall_seconds": 2.16
+  },
+  {
+   "pool": "own",
+   "id": "reset_keeps_rdptr",
+   "class": "reset",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data is X/Z, model head 0xae",
+   "wall_seconds": 2.09
+  },
+  {
+   "pool": "own",
+   "id": "reset_keeps_wrptr",
+   "class": "reset",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data is X/Z, model head 0xae",
+   "wall_seconds": 2.14
+  },
+  {
+   "pool": "own",
+   "id": "rdptr_wrap_early",
+   "class": "pointer",
+   "verdict": "found",
+   "first_failure_cycle": 15,
+   "message": "AssertionError: seed 13 cycle 18 (rst_n=1 wr_en=1 rd_en=1 wr_data=0x8d): rd_data 0xbd != model head 0x0 (model queue ['0x0', '0xbd', '0x55', '0xbd', '0x8d'])",
+   "wall_seconds": 2.56
+  },
+  {
+   "pool": "own",
+   "id": "wrptr_wrap_to_one",
+   "class": "pointer",
+   "verdict": "found",
+   "first_failure_cycle": 19,
+   "message": "AssertionError: seed 13 cycle 22 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xf1): rd_data 0xae != model head 0xbd (model queue ['0xbd', '0x55', '0xbd', '0x8d', '0x0', '0x2d', '0xf1'])",
+   "wall_seconds": 2.48
+  },
+  {
+   "pool": "own",
+   "id": "count_rd_inc",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 4,
+   "message": "AssertionError: seed 13 cycle 7 (rst_n=1 wr_en=0 rd_en=1 wr_data=0xd5): count 3 != model 1",
+   "wall_seconds": 2.24
+  },
+  {
+   "pool": "own",
+   "id": "count_saturates_below_full",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 20,
+   "message": "AssertionError: seed 13 cycle 23 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xaa): count 7 != model 8",
+   "wall_seconds": 2.31
+  },
+  {
+   "pool": "own",
+   "id": "full_stuck_low",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 20,
+   "message": "AssertionError: seed 13 cycle 23 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xaa): full 0 != model 1",
+   "wall_seconds": 2.54
+  },
+  {
+   "pool": "own",
+   "id": "empty_from_pointers",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 20,
+   "message": "AssertionError: seed 13 cycle 23 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xaa): empty 1 != model 0",
+   "wall_seconds": 2.46
+  },
+  {
+   "pool": "own",
+   "id": "write_while_full_corrupts_head",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 21,
+   "message": "AssertionError: seed 13 cycle 24 (rst_n=1 wr_en=1 rd_en=0 wr_data=0x75): rd_data 0x75 != model head 0xbd (model queue ['0xbd', '0x55', '0xbd', '0x8d', '0x0', '0x2d', '0xf1', '0xaa'])",
+   "wall_seconds": 2.41
+  },
+  {
+   "pool": "own",
+   "id": "read_while_empty_moves_rdptr",
+   "class": "boundary",
+   "verdict": "found",
+   "first_failure_cycle": 89,
+   "message": "AssertionError: seed 13 cycle 92 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xff): rd_data 0x55 != model head 0xff (model queue ['0xff'])",
+   "wall_seconds": 2.89
+  },
+  {
+   "pool": "own",
+   "id": "mem_msb_dropped",
+   "class": "data",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data 0x2e != model head 0xae (model queue ['0xae'])",
+   "wall_seconds": 2.24
+  },
+  {
+   "pool": "own",
+   "id": "mem_bit_coupling",
+   "class": "data",
+   "verdict": "found",
+   "first_failure_cycle": 1,
+   "message": "AssertionError: seed 13 cycle 4 (rst_n=1 wr_en=1 rd_en=0 wr_data=0xae): rd_data 0xaf != model head 0xae (model queue ['0xae'])",
+   "wall_seconds": 2.55
+  },
+  {
+   "pool": "own",
+   "id": "slot5_bit3_stuck1",
+   "class": "data",
+   "verdict": "found",
+   "first_failure_cycle": 9,
+   "message": "AssertionError: seed 13 cycle 12 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xff): rd_data 0x8 != model head 0x0 (model queue ['0x0', '0xff'])",
+   "wall_seconds": 2.44
+  },
+  {
+   "pool": "own",
+   "id": "head_shows_input_on_simul_at_one",
+   "class": "overlap",
+   "verdict": "found",
+   "first_failure_cycle": 5,
+   "message": "AssertionError: seed 13 before edge 8 (rst_n=1 wr_en=1 rd_en=1 wr_data=0xff): rd_data 255 != model head 0x0",
+   "wall_seconds": 2.77
+  },
+  {
+   "pool": "own",
+   "id": "empty_bypass_leaks_input",
+   "class": "unspecified",
+   "verdict": "survived",
+   "first_failure_cycle": null,
+   "message": "",
+   "wall_seconds": 28.21
+  },
+  {
+   "pool": "own",
+   "id": "empty_reads_zero",
+   "class": "unspecified",
+   "verdict": "survived",
+   "first_failure_cycle": null,
+   "message": "",
+   "wall_seconds": 27.87
+  },
+  {
+   "pool": "own",
+   "id": "full_from_pointers",
+   "class": "equivalent",
+   "verdict": "survived",
+   "first_failure_cycle": null,
+   "message": "",
+   "wall_seconds": 27.42
+  }
+ ]
+}

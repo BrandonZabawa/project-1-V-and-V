@@ -1,0 +1,891 @@
+{
+ "question": "Q2: How much does the seed matter?",
+ "owner": "Leo",
+ "profile": "v4",
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "budgets": [
+  100,
+  2500
+ ],
+ "pool_sizes": {
+  "released": 8,
+  "own": 24,
+  "all": 32
+ },
+ "directed_tests_alone_find": 29,
+ "by_budget": {
+  "100": {
+   "values": {
+    "crv_released": [
+     8,
+     8,
+     7,
+     8,
+     7,
+     8,
+     8,
+     8,
+     8,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     7,
+     8,
+     8,
+     8
+    ],
+    "crv_own": [
+     20,
+     20,
+     17,
+     20,
+     19,
+     21,
+     21,
+     21,
+     21,
+     19,
+     20,
+     21,
+     21,
+     20,
+     20,
+     21,
+     17,
+     19,
+     21,
+     21
+    ],
+    "crv_all": [
+     28,
+     28,
+     24,
+     28,
+     26,
+     29,
+     29,
+     29,
+     29,
+     26,
+     28,
+     29,
+     29,
+     28,
+     28,
+     29,
+     24,
+     27,
+     29,
+     29
+    ],
+    "suite_released": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "suite_own": [
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21
+    ],
+    "suite_all": [
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29
+    ],
+    "total_coverage": [
+     86.385,
+     86.385,
+     86.385,
+     87.793,
+     88.263,
+     93.427,
+     85.915,
+     88.732,
+     89.202,
+     87.324,
+     88.263,
+     90.141,
+     88.732,
+     83.099,
+     89.671,
+     90.141,
+     85.446,
+     86.854,
+     86.385,
+     90.141
+    ],
+    "cross_coverage": [
+     55.0,
+     62.5,
+     50.0,
+     57.5,
+     57.5,
+     75.0,
+     50.0,
+     57.5,
+     57.5,
+     57.5,
+     55.0,
+     60.0,
+     60.0,
+     52.5,
+     62.5,
+     65.0,
+     47.5,
+     62.5,
+     52.5,
+     60.0
+    ]
+   },
+   "stats": {
+    "crv_released": {
+     "n": 20,
+     "mean": 7.8,
+     "standard_deviation": 0.4104,
+     "ci95_low": 7.6079,
+     "ci95_high": 7.9921,
+     "min": 7,
+     "median": 8.0,
+     "max": 8,
+     "p2_5": 7.0,
+     "p97_5": 8.0,
+     "distinct_values": [
+      7,
+      8
+     ]
+    },
+    "crv_own": {
+     "n": 20,
+     "mean": 20.0,
+     "standard_deviation": 1.2566,
+     "ci95_low": 19.4119,
+     "ci95_high": 20.5881,
+     "min": 17,
+     "median": 20.0,
+     "max": 21,
+     "p2_5": 17.0,
+     "p97_5": 21.0,
+     "distinct_values": [
+      17,
+      19,
+      20,
+      21
+     ]
+    },
+    "crv_all": {
+     "n": 20,
+     "mean": 27.8,
+     "standard_deviation": 1.6092,
+     "ci95_low": 27.0469,
+     "ci95_high": 28.5531,
+     "min": 24,
+     "median": 28.0,
+     "max": 29,
+     "p2_5": 24.0,
+     "p97_5": 29.0,
+     "distinct_values": [
+      24,
+      26,
+      27,
+      28,
+      29
+     ]
+    },
+    "suite_released": {
+     "n": 20,
+     "mean": 8.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 8.0,
+     "ci95_high": 8.0,
+     "min": 8,
+     "median": 8.0,
+     "max": 8,
+     "p2_5": 8.0,
+     "p97_5": 8.0,
+     "distinct_values": [
+      8
+     ]
+    },
+    "suite_own": {
+     "n": 20,
+     "mean": 21.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 21.0,
+     "ci95_high": 21.0,
+     "min": 21,
+     "median": 21.0,
+     "max": 21,
+     "p2_5": 21.0,
+     "p97_5": 21.0,
+     "distinct_values": [
+      21
+     ]
+    },
+    "suite_all": {
+     "n": 20,
+     "mean": 29.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 29.0,
+     "ci95_high": 29.0,
+     "min": 29,
+     "median": 29.0,
+     "max": 29,
+     "p2_5": 29.0,
+     "p97_5": 29.0,
+     "distinct_values": [
+      29
+     ]
+    },
+    "total_coverage": {
+     "n": 20,
+     "mean": 87.9342,
+     "standard_deviation": 2.2443,
+     "ci95_low": 86.8838,
+     "ci95_high": 88.9846,
+     "min": 83.099,
+     "median": 88.028,
+     "max": 93.427,
+     "p2_5": 84.2138,
+     "p97_5": 91.8662,
+     "distinct_values": [
+      83.099,
+      85.446,
+      85.915,
+      86.385,
+      86.854,
+      87.324,
+      87.793,
+      88.263,
+      88.732,
+      89.202,
+      89.671,
+      90.141,
+      93.427
+     ]
+    },
+    "cross_coverage": {
+     "n": 20,
+     "mean": 57.875,
+     "standard_deviation": 6.1918,
+     "ci95_low": 54.9772,
+     "ci95_high": 60.7728,
+     "min": 47.5,
+     "median": 57.5,
+     "max": 75.0,
+     "p2_5": 48.6875,
+     "p97_5": 70.25,
+     "distinct_values": [
+      47.5,
+      50.0,
+      52.5,
+      55.0,
+      57.5,
+      60.0,
+      62.5,
+      65.0,
+      75.0
+     ]
+    }
+   },
+   "sign_off_seed": {
+    "crv_released": {
+     "score": 8,
+     "seeds_higher": 0,
+     "seeds_lower": 4
+    },
+    "crv_own": {
+     "score": 20,
+     "seeds_higher": 9,
+     "seeds_lower": 5
+    },
+    "crv_all": {
+     "score": 28,
+     "seeds_higher": 9,
+     "seeds_lower": 5
+    },
+    "suite_released": {
+     "score": 8,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "suite_own": {
+     "score": 21,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "suite_all": {
+     "score": 29,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "total_coverage": {
+     "score": 86.385,
+     "seeds_higher": 13,
+     "seeds_lower": 3
+    },
+    "cross_coverage": {
+     "score": 55.0,
+     "seeds_higher": 13,
+     "seeds_lower": 5
+    }
+   },
+   "seeds_closing_100_percent": 0,
+   "mutants_that_depend_on_the_seed": [
+    {
+     "id": "ignore_empty",
+     "seeds_that_find_it": 16,
+     "of": 20
+    },
+    {
+     "id": "write_when_full_if_reading",
+     "seeds_that_find_it": 19,
+     "of": 20
+    },
+    {
+     "id": "read_when_empty_if_writing",
+     "seeds_that_find_it": 15,
+     "of": 20
+    },
+    {
+     "id": "write_beats_reset",
+     "seeds_that_find_it": 14,
+     "of": 20
+    },
+    {
+     "id": "read_while_empty_moves_rdptr",
+     "seeds_that_find_it": 16,
+     "of": 20
+    },
+    {
+     "id": "head_shows_input_on_simul_at_one",
+     "seeds_that_find_it": 16,
+     "of": 20
+    }
+   ]
+  },
+  "2500": {
+   "values": {
+    "crv_released": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "crv_own": [
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21
+    ],
+    "crv_all": [
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29
+    ],
+    "suite_released": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "suite_own": [
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21,
+     21
+    ],
+    "suite_all": [
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29,
+     29
+    ],
+    "total_coverage": [
+     100.0,
+     100.0,
+     100.0,
+     99.531,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     99.531,
+     100.0,
+     100.0,
+     99.531,
+     99.531,
+     100.0,
+     100.0,
+     99.531,
+     99.061,
+     100.0
+    ],
+    "cross_coverage": [
+     100.0,
+     100.0,
+     100.0,
+     97.5,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     97.5,
+     100.0,
+     100.0,
+     97.5,
+     97.5,
+     100.0,
+     100.0,
+     97.5,
+     95.0,
+     100.0
+    ]
+   },
+   "stats": {
+    "crv_released": {
+     "n": 20,
+     "mean": 8.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 8.0,
+     "ci95_high": 8.0,
+     "min": 8,
+     "median": 8.0,
+     "max": 8,
+     "p2_5": 8.0,
+     "p97_5": 8.0,
+     "distinct_values": [
+      8
+     ]
+    },
+    "crv_own": {
+     "n": 20,
+     "mean": 21.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 21.0,
+     "ci95_high": 21.0,
+     "min": 21,
+     "median": 21.0,
+     "max": 21,
+     "p2_5": 21.0,
+     "p97_5": 21.0,
+     "distinct_values": [
+      21
+     ]
+    },
+    "crv_all": {
+     "n": 20,
+     "mean": 29.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 29.0,
+     "ci95_high": 29.0,
+     "min": 29,
+     "median": 29.0,
+     "max": 29,
+     "p2_5": 29.0,
+     "p97_5": 29.0,
+     "distinct_values": [
+      29
+     ]
+    },
+    "suite_released": {
+     "n": 20,
+     "mean": 8.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 8.0,
+     "ci95_high": 8.0,
+     "min": 8,
+     "median": 8.0,
+     "max": 8,
+     "p2_5": 8.0,
+     "p97_5": 8.0,
+     "distinct_values": [
+      8
+     ]
+    },
+    "suite_own": {
+     "n": 20,
+     "mean": 21.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 21.0,
+     "ci95_high": 21.0,
+     "min": 21,
+     "median": 21.0,
+     "max": 21,
+     "p2_5": 21.0,
+     "p97_5": 21.0,
+     "distinct_values": [
+      21
+     ]
+    },
+    "suite_all": {
+     "n": 20,
+     "mean": 29.0,
+     "standard_deviation": 0.0,
+     "ci95_low": 29.0,
+     "ci95_high": 29.0,
+     "min": 29,
+     "median": 29.0,
+     "max": 29,
+     "p2_5": 29.0,
+     "p97_5": 29.0,
+     "distinct_values": [
+      29
+     ]
+    },
+    "total_coverage": {
+     "n": 20,
+     "mean": 99.8358,
+     "standard_deviation": 0.2755,
+     "ci95_low": 99.7069,
+     "ci95_high": 99.9647,
+     "min": 99.061,
+     "median": 100.0,
+     "max": 100.0,
+     "p2_5": 99.2843,
+     "p97_5": 100.0,
+     "distinct_values": [
+      99.061,
+      99.531,
+      100.0
+     ]
+    },
+    "cross_coverage": {
+     "n": 20,
+     "mean": 99.125,
+     "standard_deviation": 1.4679,
+     "ci95_low": 98.438,
+     "ci95_high": 99.812,
+     "min": 95.0,
+     "median": 100.0,
+     "max": 100.0,
+     "p2_5": 96.1875,
+     "p97_5": 100.0,
+     "distinct_values": [
+      95.0,
+      97.5,
+      100.0
+     ]
+    }
+   },
+   "sign_off_seed": {
+    "crv_released": {
+     "score": 8,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "crv_own": {
+     "score": 21,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "crv_all": {
+     "score": 29,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "suite_released": {
+     "score": 8,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "suite_own": {
+     "score": 21,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "suite_all": {
+     "score": 29,
+     "seeds_higher": 0,
+     "seeds_lower": 0
+    },
+    "total_coverage": {
+     "score": 100.0,
+     "seeds_higher": 0,
+     "seeds_lower": 6
+    },
+    "cross_coverage": {
+     "score": 100.0,
+     "seeds_higher": 0,
+     "seeds_lower": 6
+    }
+   },
+   "seeds_closing_100_percent": 14,
+   "mutants_that_depend_on_the_seed": []
+  }
+ },
+ "every_seed_agrees_from_budget": {
+  "crv_all": 400,
+  "suite_all": 50
+ },
+ "curve_over_checkpoints": [
+  {
+   "budget": 50,
+   "crv_all": {
+    "mean": 26.15,
+    "min": 23,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 100,
+   "crv_all": {
+    "mean": 27.8,
+    "min": 24,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 200,
+   "crv_all": {
+    "mean": 28.65,
+    "min": 25,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 400,
+   "crv_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 800,
+   "crv_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 1600,
+   "crv_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  },
+  {
+   "budget": 2500,
+   "crv_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   },
+   "suite_all": {
+    "mean": 29.0,
+    "min": 29,
+    "max": 29
+   }
+  }
+ ]
+}

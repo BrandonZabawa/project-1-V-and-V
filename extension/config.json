@@ -1,0 +1,24 @@
+{
+  "about": "Settings for the Project 1 graduate extension. Q1 (Brandon Zabawa): does closing coverage track finding bugs? Q2 (Leo): how much does the seed matter? Paths are relative to this extension/ folder.",
+  "packet_code_folder": "../../..",
+  "suite_folder": "..",
+  "mutant_pools": {
+    "released": "../mutants_released.yaml",
+    "own": "../mutation/mutants_stress.yaml"
+  },
+  "coverage_checkpoints": [50, 100, 200, 400, 800, 1600, 2500, 3200],
+  "q1_coverage_vs_bugs": {
+    "owner": "Brandon Zabawa",
+    "profiles": ["v1", "v4"],
+    "seeds": [1, 2, 3, 4, 5],
+    "budgets": [50, 100, 200, 400, 800, 1600, 3200]
+  },
+  "q2_seed_spread": {
+    "owner": "Leo",
+    "profile": "v4",
+    "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "budgets": [100, 2500]
+  },
+  "parallel_jobs": 2,
+  "run_timeout_seconds": 600
+}
